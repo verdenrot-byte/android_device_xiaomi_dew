@@ -1,0 +1,9 @@
+# Audio
+vendor.audio.timecheck_timeoutMs=10000
+
+# Display
+vendor.display.force_tonemapping=1
+
+# Radio
+persist.vendor.radio.dynamic_sar=1
+
