@@ -1,11 +1,12 @@
 # Android Device Tree for Xiaomi Redmi 15C / Poco C85 (dew)
 
-This repository contains the device configuration and tree for Xiaomi Redmi 15C 4G / Poco C85 4G (dew).
+This repository contains the device configuration and tree for Xiaomi Redmi 15C 4G / Poco C85 4G (`dew`).
 
 ## Specifications
 - **Manufacturer:** Xiaomi
-- **Codename:** dew
+- **Codename:** `dew`
 - **Platform:** MediaTek
 
 ## Build
-
+```bash
+git clone https://github.com/verdenrot-byte/android_device_xiaomi_dew.git device/xiaomi/dew
