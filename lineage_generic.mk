@@ -13,8 +13,8 @@ $(call inherit-product, device/xiaomi/generic/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := dew
-PRODUCT_NAME := twrp_dew
+PRODUCT_DEVICE := generic
+PRODUCT_NAME := lineage_generic
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := mainline
 PRODUCT_MANUFACTURER := xiaomi
