@@ -3,11 +3,23 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/generic
+DEVICE_PATH := device/xiaomi/dew
+
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS +=
+# A/B OTA Partitions
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot
+
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
