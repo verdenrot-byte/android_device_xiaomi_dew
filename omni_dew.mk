@@ -7,21 +7,17 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from generic device
-# $(call inherit-product, device/xiaomi/generic/device.mk)
-
-# Inherit some common Lineage stuff.
-# $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Omni stuff
+$(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_DEVICE := dew
-PRODUCT_NAME := twrp_dew
+PRODUCT_NAME := omni_dew
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := mainline
 PRODUCT_MANUFACTURER := xiaomi
-$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="missi-user 16 BP2A.250605.031.A3 OS3.0.302.0.WNFMIXM release-keys" \
-    BuildFingerprint=Xiaomi/missi/missi:16/BP2A.250605.031.A3/OS3.0.302.0.WNFMIXM:user/release-keys
+    BuildDesc="nissi-user 14 UP1A.231005.007.A1 OS1.0.3.0.UNRMIXM release-keys" \
+    BuildFingerprint="Xiaomi/nissi/nissi:14/UP1A.231005.007.A1/OS1.0.3.0.UNRMIXM:user/release-keys"
